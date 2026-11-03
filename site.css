@@ -1,0 +1,24 @@
+@font-face{font-family:"Bricolage";src:url(/fonts/bricolage-grotesque-latin-wght-normal.woff2) format("woff2");font-weight:200 800;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Bricolage";src:url(/fonts/bricolage-grotesque-latin-ext-wght-normal.woff2) format("woff2");font-weight:200 800;font-display:swap;unicode-range:U+0100-0130,U+0132-02BA,U+1E00-1EFF,U+2C60-2C7F}
+@font-face{font-family:"Figtree";src:url(/fonts/figtree-latin-wght-normal.woff2) format("woff2");font-weight:300 900;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Figtree";src:url(/fonts/figtree-latin-ext-wght-normal.woff2) format("woff2");font-weight:300 900;font-display:swap;unicode-range:U+0100-0130,U+0132-02BA,U+1E00-1EFF,U+2C60-2C7F}
+:root{color-scheme:dark;--night:#171a52;--deep:#101341;--raise:#23276b;--text:#f3f2ff;--soft:#bfc1ee;--line:#454a9c;--cyan:#4fd8ff;--pink:#ff5fa8;--amber:#ffc24d;--gutter:clamp(16px,4vw,56px)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--night);color:var(--text);font:400 1.0625rem/1.6 "Figtree",system-ui,sans-serif}
+a{color:var(--cyan);text-underline-offset:.18em}
+a:hover{color:var(--text)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:"Bricolage",system-ui,sans-serif;margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+button{font:600 .95rem "Figtree",system-ui,sans-serif;color:var(--text);background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45em 1em;cursor:pointer;min-height:44px}
+button:hover{border-color:var(--text)}
+button[aria-pressed="true"]{background:var(--text);border-color:var(--text);color:var(--deep)}
+details{max-width:64ch}
+summary{cursor:pointer;font-weight:600;color:var(--cyan);min-height:44px;display:flex;align-items:center;gap:.5em;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font:700 1.3em/1 "Bricolage",sans-serif;width:1em}
+details[open] summary::before{content:"−"}
+details p{margin:0 0 .9em}
+.tech{color:var(--soft);font-size:.975rem;border-left:2px solid var(--line);padding-left:14px}
+.tech strong{color:var(--text);font-weight:600}

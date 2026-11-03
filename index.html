@@ -3,95 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Semih Geçim</title>
-<meta name="description" content="Semih Geçim: yapay zekâ mühendisliği yüksek lisans öğrencisi, elektrik-elektronik mühendisi. Projeler ve notlar.">
+<title>Semih Geçim | Yapay zekâ mühendisliği, projeler</title>
+<meta name="description" content="Semih Geçim'in kişisel sitesi. Bursa Uludağ Üniversitesi yapay zekâ mühendisliği yüksek lisans öğrencisi. Oynanabilir yapay zekâ denemeleri ve projeler.">
+<meta name="theme-color" content="#171a52">
 <meta property="og:title" content="Semih Geçim">
-<meta property="og:description" content="Yapay zekâ mühendisliği yüksek lisans öğrencisi, elektrik-elektronik mühendisi.">
+<meta property="og:description" content="Adına dokun, noktalar takım kursun. Oynanabilir yapay zekâ denemeleri ve projeler.">
 <meta property="og:url" content="https://semihgecim.me/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://semihgecim.me/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://semihgecim.me/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a1d4e'/%3E%3Ccircle cx='10' cy='11' r='3.5' fill='%23ff6fb5'/%3E%3Ccircle cx='22' cy='10' r='3.5' fill='%236f8cff'/%3E%3Ccircle cx='16' cy='22' r='3.5' fill='%2334d3c6'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171a52'/%3E%3Ccircle cx='10' cy='11' r='3.5' fill='%23ff5fa8'/%3E%3Ccircle cx='22' cy='10' r='3.5' fill='%234fd8ff'/%3E%3Ccircle cx='16' cy='22' r='3.5' fill='%23ffc24d'/%3E%3C/svg%3E">
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Semih Geçim","url":"https://semihgecim.me/","sameAs":["https://github.com/semihgecim"],"description":"Yapay zekâ mühendisliği yüksek lisans öğrencisi, elektrik-elektronik mühendisi","affiliation":{"@type":"CollegeOrUniversity","name":"Bursa Uludağ Üniversitesi"},"homeLocation":{"@type":"City","name":"Bursa"}}
+</script>
 <style>
-@font-face{font-family:"Bricolage";src:url(fonts/bricolage-grotesque-latin-wght-normal.woff2) format("woff2");font-weight:200 800;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:"Bricolage";src:url(fonts/bricolage-grotesque-latin-ext-wght-normal.woff2) format("woff2");font-weight:200 800;font-display:swap;unicode-range:U+0100-0130,U+0132-02BA,U+1E00-1EFF,U+2C60-2C7F}
-@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-wght-normal.woff2) format("woff2");font-weight:300 900;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-ext-wght-normal.woff2) format("woff2");font-weight:300 900;font-display:swap;unicode-range:U+0100-0130,U+0132-02BA,U+1E00-1EFF,U+2C60-2C7F}
-
-:root{
-  color-scheme:light;
-  --paper:#eceffa;
-  --ink:#1a1d4e;
-  --soft:#4a4e7c;
-  --line:#c3c8e4;
-  --accent:#2340d8;
-  --gutter:clamp(16px,4vw,56px);
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 "Figtree",system-ui,sans-serif}
-a{color:var(--accent);text-underline-offset:.18em}
-a:hover{color:var(--ink)}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
-h1,h2,h3{font-family:"Bricolage",system-ui,sans-serif;margin:0}
-
-.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gutter)}
-
-.hero{padding-top:clamp(24px,5vw,64px)}
-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-#field{display:block;width:100%;cursor:crosshair;touch-action:manipulation}
-.controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:clamp(12px,2vw,24px);color:var(--soft);font-size:.975rem}
-.controls p{margin:0;flex:1 1 280px;max-width:62ch}
-button{font:600 .95rem "Figtree",system-ui,sans-serif;color:var(--ink);background:none;border:1.5px solid var(--ink);border-radius:999px;padding:.45em 1em;cursor:pointer;min-height:44px}
-button:hover:not(:disabled){background:var(--ink);color:var(--paper)}
-button:disabled{opacity:.45;cursor:default}
-
-.intro{margin-top:clamp(48px,8vw,104px);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:24px clamp(32px,6vw,88px);align-items:start}
-.lede{font:500 clamp(1.5rem,3.1vw,2.35rem)/1.22 "Bricolage",system-ui,sans-serif;margin:0;letter-spacing:-.01em;max-width:24em}
-.intro .side{margin:0;color:var(--soft);max-width:38ch;padding-top:.35em}
-
-.work{margin-top:clamp(56px,8vw,112px)}
-h2{font-size:1.0625rem;font-weight:600;color:var(--soft);margin-bottom:14px}
-.project{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:10px clamp(32px,6vw,88px);padding:clamp(20px,3vw,32px) 0;border-top:1.5px solid var(--ink);text-decoration:none;color:inherit}
-.project h3{font-size:clamp(2rem,5.4vw,4rem);font-weight:700;line-height:1.02;letter-spacing:-.025em;color:var(--ink)}
-.project:hover h3{color:var(--accent)}
-.project p{margin:0;max-width:38ch}
-.project .go{display:block;margin-top:.6em;font-weight:600;color:var(--accent);text-decoration:underline;text-underline-offset:.18em}
-
-footer{margin-top:clamp(56px,8vw,112px);padding-bottom:40px;color:var(--soft);font-size:.975rem}
-footer .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
-
-@media (max-width:720px){
-  .intro,.project{grid-template-columns:1fr}
-}
+.hero{position:relative}
+h1.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#field{display:block;width:100%;cursor:pointer;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.play{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:4px}
+.play .say{margin:0;font:600 clamp(1.25rem,2.6vw,1.9rem)/1.2 "Bricolage",sans-serif;flex:1 1 320px}
+#status{color:var(--soft);font-variant-numeric:tabular-nums}
+.more{margin-top:10px}
+.intro{margin-top:clamp(64px,10vw,136px);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:24px clamp(32px,6vw,88px);align-items:start}
+.lede{font:500 clamp(1.6rem,3.4vw,2.6rem)/1.18 "Bricolage",sans-serif;letter-spacing:-.012em;margin:0}
+.side{margin:0;color:var(--soft);max-width:38ch;padding-top:.3em}
+.work{margin-top:clamp(72px,10vw,136px)}
+.project{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:20px clamp(32px,6vw,88px);align-items:center;text-decoration:none;color:inherit;padding:clamp(28px,4vw,56px) 0;border-top:1.5px solid var(--line)}
+.project h2{font-size:clamp(2.3rem,6vw,4.6rem);font-weight:700;line-height:1;letter-spacing:-.025em;color:var(--text)}
+.project p{margin:16px 0 0;max-width:40ch;color:var(--soft)}
+.project .go{display:inline-block;margin-top:14px;font-weight:600;color:var(--cyan);text-decoration:underline;text-underline-offset:.18em}
+.project:hover h2{color:var(--amber)}
+.project img{display:block;width:100%;height:clamp(240px,34vw,420px);object-fit:cover;object-position:top;border-radius:6px;background:var(--deep)}
+footer{margin-top:clamp(48px,8vw,96px);padding-bottom:40px;color:var(--soft)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between;border-top:1.5px solid var(--line);padding-top:20px}
+@media (max-width:760px){.intro,.project{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
-<header class="hero wrap">
-  <h1>Semih Geçim</h1>
-  <canvas id="field" role="img" aria-label="Semih Geçim adı, renkli veri noktalarından oluşuyor"></canvas>
-  <div class="controls">
-    <p id="hint">Adım 1 noktadan oluşuyor. Üzerine tıkla: tıkladığın yere yeni bir küme merkezi eklenir, noktalar k-means ile yeniden gruplanır.</p>
-    <button id="add" type="button">Küme ekle</button>
-    <button id="reset" type="button">Baştan başla</button>
-    <span id="status" aria-live="polite"></span>
+<header class="hero">
+  <h1 class="sr">Semih Geçim</h1>
+  <canvas id="field" role="img" aria-label="Semih Geçim adı, renkli noktalardan oluşuyor. Dokununca noktalar yeniden gruplanıyor."></canvas>
+  <div class="wrap">
+    <div class="play">
+      <p class="say">Adıma dokun. Noktalar en yakın merkeze koşup takım kursun.</p>
+      <span id="status" aria-live="polite"></span>
+      <button id="reset" type="button">Baştan başla</button>
+    </div>
+    <details class="more">
+      <summary>Burada ne oluyor?</summary>
+      <p>Her halka bir takım kaptanı. Her nokta en yakın kaptanın takımına geçer, sonra kaptanlar takımlarının ortasına yürür. Kimse takım değiştirmeyene kadar bu tekrar eder. Kimse noktalara ne yapacağını söylemiyor; gruplar kendiliğinden çıkıyor.</p>
+      <p class="tech"><strong>Bilenler için:</strong> Bu gerçek bir k-means (Lloyd algoritması). <span id="points"></span> nokta, adımın harflerinin piksellerinden örneklendi. Küme içi toplam kare uzaklık (WCSS) şu an <span id="wcss"></span>. Her yeni merkez bu değeri düşürür; ama merkezleri nereye koyduğun sonucu değiştirir, çünkü k-means yerel optimuma takılır.</p>
+    </details>
   </div>
 </header>
 
 <main class="wrap">
   <section class="intro">
-    <p class="lede">Bursa Uludağ Üniversitesi’nde yapay zekâ mühendisliği yüksek lisansı yapıyorum. Öğrendiklerimi küçük projelerle deniyorum.</p>
-    <p class="side">Elektronik öğretmenliği ve elektrik-elektronik mühendisliği okudum. Şu an en çok veri madenciliğiyle uğraşıyorum; yukarıdaki oyuncak da oradan geliyor.</p>
+    <p class="lede">Ben Semih Geçim. Bursa Uludağ Üniversitesi’nde yapay zekâ mühendisliği yüksek lisansı yapıyorum, öğrendiklerimi oynanabilir şeylere çeviriyorum.</p>
+    <p class="side">Elektronik öğretmenliği ve elektrik-elektronik mühendisliği okudum. Bu aralar veri madenciliği çalışıyorum; yukarıdaki oyuncak da oradan geliyor.</p>
   </section>
 
-  <section class="work">
-    <h2>Projeler</h2>
-    <a class="project" href="/dedemin-lokantasi/">
-      <h3>Dedemin Lokantası</h3>
-      <p>Bursa’da dedenin kapanmış lokantasını yeniden açtığın, Türk mutfağı üzerine bir birleştirme oyunu. Tarayıcıda ve telefonda oynanır.<span class="go">Oyunu aç</span></p>
-    </a>
+  <section class="work" aria-label="Projeler">
     <a class="project" href="/sinir-agi/">
-      <h3>Sinir ağını eğit</h3>
-      <p>Küçük bir yapay sinir ağı tarayıcında gözünün önünde öğreniyor. Nokta ekle, ağın boyutunu değiştir, iki rengi nasıl ayırdığını izle.<span class="go">Denemeye başla</span></p>
+      <div>
+        <h2>Yapay zekâya şekil öğret</h2>
+        <p>Ekrana parmağınla boya, küçük bir sinir ağı saniyeler içinde şekli öğrensin. İçindeki her nöronun ne gördüğünü de izleyebilirsin.</p>
+        <span class="go">Denemeye başla</span>
+      </div>
+      <img src="/img/sinir-agi.jpg" width="1000" height="1000" loading="lazy" alt="Pembe noktalardan oluşan kalp şekli ve sinir ağının çizdiği sınır">
+    </a>
+    <a class="project" href="/dedemin-lokantasi/">
+      <div>
+        <h2>Dedemin Lokantası</h2>
+        <p>Bursa’da dedenin kapanmış lokantasını yeniden açtığın, Türk mutfağı üzerine bir birleştirme oyunu. Tarayıcıda ve telefonda oynanır.</p>
+        <span class="go">Oyunu aç</span>
+      </div>
+      <img src="/img/dedemin-lokantasi.jpg" width="780" height="1000" loading="lazy" alt="Dedemin Lokantası oyunundan bir ekran">
     </a>
   </section>
 </main>
@@ -105,183 +95,181 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-betw
 
 <script>
 (function () {
-  var canvas = document.getElementById('field');
-  var ctx = canvas.getContext('2d');
-  var addBtn = document.getElementById('add');
-  var resetBtn = document.getElementById('reset');
-  var statusEl = document.getElementById('status');
-  var hint = document.getElementById('hint');
-
-  var COLORS = ['#2340d8', '#c4177a', '#00807a', '#a85f00', '#6d35d6', '#c02f2f', '#2f7a12', '#0a6fa8'];
+  'use strict';
+  var cv = document.getElementById('field'), ctx = cv.getContext('2d');
+  var statusEl = document.getElementById('status'), wcssEl = document.getElementById('wcss'), pointsEl = document.getElementById('points');
+  var COLORS = ['#4fd8ff', '#ff5fa8', '#ffc24d', '#4ff0b4', '#b49bff', '#ff8a5c', '#c8f060', '#e6e9ff'];
   var MAX_K = COLORS.length;
   var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W = 0, H = 0, R = 2, pts = [], centers = [], waves = [], oldest = 0;
+  var lines = 0, iters = 0, touched = false, ptr = null, timer = null, autoT = null, running = false, rafId = 0;
 
-  var W = 0, H = 0, R = 2;
-  var pts = [];        // {x, y, sx, sy, c}
-  var centers = [];    // {x, y}
-  var timer = null, intro = 0;
+  function fnt(s) { return '800 ' + s + 'px Bricolage, system-ui, sans-serif'; }
 
   function layout() {
-    W = Math.floor(canvas.parentElement.clientWidth -
-        parseFloat(getComputedStyle(canvas.parentElement).paddingLeft) * 2);
-    var lines = W < 640 ? ['Semih', 'Geçim'] : ['Semih Geçim'];
+    W = Math.floor(cv.parentElement.clientWidth);
+    var gutter = Math.max(16, Math.min(56, W * 0.04));
+    var inner = W - gutter * 2;
+    var words = W < 640 ? ['Semih', 'Geçim'] : ['Semih Geçim'];
     var off = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
-    var font = function (s) { return '800 ' + s + 'px Bricolage, system-ui, sans-serif'; };
-    off.font = font(100);
-    var widest = Math.max.apply(null, lines.map(function (l) { return off.measureText(l).width; }));
-    var size = Math.floor(100 * W / widest * 0.985);
-    var lineH = size * 0.98;
-    H = Math.ceil(lineH * lines.length + size * 0.2);
-
+    off.font = fnt(100);
+    var widest = Math.max.apply(null, words.map(function (l) { return off.measureText(l).width; }));
+    var size = Math.floor(100 * inner / widest * 0.985);
+    var lineH = size * 0.98, pad = Math.max(28, size * 0.22);
+    H = Math.ceil(lineH * words.length + size * 0.2 + pad * 2);
     off.canvas.width = W; off.canvas.height = H;
-    off.font = font(size);
-    off.textBaseline = 'alphabetic';
-    off.fillStyle = '#000';
-    lines.forEach(function (l, i) { off.fillText(l, 0, size * 0.92 + i * lineH); });
-
+    off.font = fnt(size); off.fillStyle = '#000';
+    words.forEach(function (l, i) { off.fillText(l, gutter, pad + size * 0.92 + i * lineH); });
     var data = off.getImageData(0, 0, W, H).data;
-    var step = Math.max(4, Math.round(W / 190));
-    R = step * 0.40;
+    var step = Math.max(4, Math.round(inner / 190));
+    R = step * 0.39;
     pts = [];
-    for (var y = 0; y < H; y += step) {
-      for (var x = 0; x < W; x += step) {
-        if (data[(y * W + x) * 4 + 3] > 128) {
-          pts.push({ x: x, y: y, sx: Math.random() * W, sy: Math.random() * H, c: 0 });
-        }
-      }
+    for (var y = 0; y < H; y += step) for (var x = 0; x < W; x += step) {
+      if (data[(y * W + x) * 4 + 3] > 128) pts.push({ hx: x, hy: y, x: x, y: y, vx: 0, vy: 0, c: 0, pop: 0 });
     }
-    var dpr = window.devicePixelRatio || 1;
-    canvas.width = W * dpr; canvas.height = H * dpr;
-    canvas.style.height = H + 'px';
+    var dpr = Math.min(devicePixelRatio || 1, 2);
+    cv.width = W * dpr; cv.height = H * dpr; cv.style.height = H + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    var n = pts.length;
-    hint.textContent = 'Adım ' + n.toLocaleString('tr-TR') + ' noktadan oluşuyor. Üzerine tıkla: tıkladığın yere yeni bir küme merkezi eklenir, noktalar k-means ile yeniden gruplanır.';
+    pointsEl.textContent = pts.length.toLocaleString('tr-TR');
   }
 
   function assign() {
     var moved = false;
-    pts.forEach(function (p) {
-      var best = 0, bd = Infinity;
-      centers.forEach(function (c, i) {
-        var d = (p.x - c.x) * (p.x - c.x) + (p.y - c.y) * (p.y - c.y);
-        if (d < bd) { bd = d; best = i; }
-      });
-      if (p.c !== best) { p.c = best; moved = true; }
-    });
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i], best = 0, bd = Infinity;
+      for (var j = 0; j < centers.length; j++) {
+        var c = centers[j], d = (p.hx - c.x) * (p.hx - c.x) + (p.hy - c.y) * (p.hy - c.y);
+        if (d < bd) { bd = d; best = j; }
+      }
+      if (p.c !== best) { p.c = best; p.pop = 1; moved = true; }
+    }
     return moved;
   }
-
   function update() {
-    var sum = centers.map(function () { return { x: 0, y: 0, n: 0 }; });
-    pts.forEach(function (p) { var s = sum[p.c]; s.x += p.x; s.y += p.y; s.n++; });
-    centers.forEach(function (c, i) {
-      if (sum[i].n) { c.x = sum[i].x / sum[i].n; c.y = sum[i].y / sum[i].n; }
-    });
+    var s = centers.map(function () { return { x: 0, y: 0, n: 0 }; });
+    pts.forEach(function (p) { var q = s[p.c]; q.x += p.hx; q.y += p.hy; q.n++; });
+    centers.forEach(function (c, i) { if (s[i].n) { c.tx = s[i].x / s[i].n; c.ty = s[i].y / s[i].n; c.x = c.tx; c.y = c.ty; } });
   }
-
-  function draw(t) {
-    ctx.clearRect(0, 0, W, H);
-    var e = t === undefined ? 1 : 1 - Math.pow(1 - t, 3);
-    for (var i = 0; i < pts.length; i++) {
-      var p = pts[i];
-      ctx.fillStyle = COLORS[p.c];
-      ctx.beginPath();
-      ctx.arc(p.sx + (p.x - p.sx) * e, p.sy + (p.y - p.sy) * e, R, 0, 6.2832);
-      ctx.fill();
-    }
-    if (e < 1) return;
-    centers.forEach(function (c, i) {
-      var r = Math.max(7, R * 3);
-      ctx.beginPath(); ctx.arc(c.x, c.y, r, 0, 6.2832);
-      ctx.fillStyle = '#eceffa'; ctx.fill();
-      ctx.lineWidth = Math.max(2.5, R); ctx.strokeStyle = COLORS[i]; ctx.stroke();
-    });
+  function wcss() {
+    var t = 0;
+    pts.forEach(function (p) { var c = centers[p.c]; t += (p.hx - c.x) * (p.hx - c.x) + (p.hy - c.y) * (p.hy - c.y); });
+    return t;
   }
-
+  function report(done) {
+    var k = centers.length;
+    statusEl.textContent = done ? k + ' takım, ' + iters + ' adımda oturdu' : k + ' takım kuruluyor';
+    wcssEl.textContent = Math.round(wcss()).toLocaleString('tr-TR');
+  }
   function settle() {
-    clearTimeout(timer);
-    if (reduced) {
-      var guard = 0;
-      while (assign() && guard++ < 50) update();
-      draw();
-      return;
-    }
+    clearTimeout(timer); iters = 0;
+    if (reduced) { var g = 0; while (assign() && g++ < 60) { update(); iters++; } report(true); paint(); return; }
     (function tick() {
       var moved = assign();
-      draw();
-      if (moved) { update(); timer = setTimeout(tick, 170); }
+      if (moved) { iters++; update(); lines = 1; report(false); timer = setTimeout(tick, 190); }
+      else report(true);
+      wake();
     })();
   }
-
-  function report() {
-    statusEl.textContent = centers.length + ' küme';
-    addBtn.disabled = centers.length >= MAX_K;
+  function poke(x, y) {
+    touched = true; clearTimeout(autoT);
+    if (centers.length < MAX_K) centers.push({ x: x, y: y });
+    else { centers[oldest].x = x; centers[oldest].y = y; oldest = (oldest + 1) % MAX_K; }
+    if (!reduced) waves.push({ x: x, y: y, r: 0 });
+    lines = 1;
+    settle();
   }
-
-  function addCenter(x, y) {
-    if (centers.length >= MAX_K) {
-      statusEl.textContent = 'En fazla ' + MAX_K + ' küme. Baştan başlayabilirsin.';
-      return;
-    }
-    centers.push({ x: x, y: y });
-    report();
+  function seed(animate) {
+    oldest = 0;
+    centers = [{ x: W * .2, y: H * .5 }, { x: W * .55, y: H * .5 }];
+    if (animate && !reduced) pts.forEach(function (p) { p.x = Math.random() * W; p.y = Math.random() * H; p.vx = p.vy = 0; });
     settle();
   }
 
-  function seed() {
-    centers = [{ x: W * 0.17, y: H * 0.5 }, { x: W * 0.5, y: H * 0.5 }, { x: W * 0.83, y: H * 0.5 }];
-    report();
-  }
-
-  function start(animate) {
-    cancelAnimationFrame(intro);
-    clearTimeout(timer);
-    seed();
-    assign();
-    if (!animate || reduced) { settle(); return; }
-    var t0 = performance.now(), dur = 1100;
-    (function frame(now) {
-      var t = Math.min(1, (now - t0) / dur);
-      draw(t);
-      if (t < 1) intro = requestAnimationFrame(frame); else settle();
-    })(t0);
-  }
-
-  canvas.addEventListener('click', function (ev) {
-    var r = canvas.getBoundingClientRect();
-    addCenter(ev.clientX - r.left, ev.clientY - r.top);
-  });
-  addBtn.addEventListener('click', function () {
-    // Klavye ve düğme için: merkeze en uzak noktaya yeni küme koy.
-    var far = pts[0], fd = -1;
-    pts.forEach(function (p) {
-      var c = centers[p.c], d = (p.x - c.x) * (p.x - c.x) + (p.y - c.y) * (p.y - c.y);
-      if (d > fd) { fd = d; far = p; }
+  function paint() {
+    ctx.clearRect(0, 0, W, H);
+    var i, j;
+    if (lines > 0.01) {
+      ctx.lineWidth = 1; ctx.globalAlpha = lines * 0.22;
+      for (j = 0; j < centers.length; j++) {
+        ctx.beginPath(); ctx.strokeStyle = COLORS[j];
+        for (i = 0; i < pts.length; i += 2) if (pts[i].c === j) { ctx.moveTo(centers[j].x, centers[j].y); ctx.lineTo(pts[i].x, pts[i].y); }
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+    }
+    for (j = 0; j < centers.length; j++) {
+      ctx.beginPath(); ctx.fillStyle = COLORS[j];
+      for (i = 0; i < pts.length; i++) {
+        var p = pts[i];
+        if (p.c !== j) continue;
+        var r = R * (1 + p.pop * .9);
+        ctx.moveTo(p.x + r, p.y); ctx.arc(p.x, p.y, r, 0, 6.2832);
+      }
+      ctx.fill();
+    }
+    waves.forEach(function (w) {
+      ctx.beginPath(); ctx.arc(w.x, w.y, w.r, 0, 6.2832);
+      ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(243,242,255,' + Math.max(0, .5 * (1 - w.r / (W * .55))) + ')'; ctx.stroke();
     });
-    addCenter(far.x, far.y);
-  });
-  resetBtn.addEventListener('click', function () { start(true); });
+    centers.forEach(function (c, j) {
+      var r = Math.max(8, R * 3.2);
+      ctx.beginPath(); ctx.arc(c.x, c.y, r, 0, 6.2832);
+      ctx.fillStyle = '#171a52'; ctx.fill();
+      ctx.lineWidth = Math.max(3, R * 1.1); ctx.strokeStyle = COLORS[j]; ctx.stroke();
+    });
+  }
+
+  function frame() {
+    var active = false, i;
+    waves = waves.filter(function (w) { w.r += W * .017; return w.r < W * .55; });
+    if (waves.length) active = true;
+    for (i = 0; i < pts.length; i++) {
+      var p = pts[i], ax = (p.hx - p.x) * .075, ay = (p.hy - p.y) * .075;
+      for (var w = 0; w < waves.length; w++) {
+        var W0 = waves[w], dx = p.x - W0.x, dy = p.y - W0.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+        if (Math.abs(d - W0.r) < 16) { var f = 2.4 * (1 - W0.r / (W * .55)); ax += dx / d * f; ay += dy / d * f; }
+      }
+      if (ptr) {
+        var px = p.x - ptr.x, py = p.y - ptr.y, q = px * px + py * py, rad = Math.max(60, W * .07);
+        if (q < rad * rad && q > .01) { var m = Math.sqrt(q), s = (1 - m / rad) * 2.6; ax += px / m * s; ay += py / m * s; }
+      }
+      p.vx = (p.vx + ax) * .8; p.vy = (p.vy + ay) * .8;
+      p.x += p.vx; p.y += p.vy;
+      if (p.pop > .01) p.pop *= .9; else p.pop = 0;
+      if (Math.abs(p.vx) + Math.abs(p.vy) > .03 || Math.abs(p.x - p.hx) + Math.abs(p.y - p.hy) > .3 || p.pop) active = true;
+    }
+    if (lines > .01) { lines *= .975; active = true; } else lines = 0;
+    paint();
+    if (active || ptr) rafId = requestAnimationFrame(frame); else running = false;
+  }
+  function wake() {
+    if (reduced) { paint(); return; }
+    if (!running) { running = true; rafId = requestAnimationFrame(frame); }
+  }
+  function local(e) { var r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+
+  cv.addEventListener('click', function (e) { var l = local(e); poke(l.x, l.y); });
+  cv.addEventListener('pointermove', function (e) { if (reduced || e.pointerType === 'touch') return; ptr = local(e); wake(); });
+  cv.addEventListener('pointerleave', function () { ptr = null; wake(); });
+  document.getElementById('reset').addEventListener('click', function () { seed(true); wake(); });
 
   var lastW = 0, rt;
   addEventListener('resize', function () {
     clearTimeout(rt);
     rt = setTimeout(function () {
-      if (canvas.parentElement.clientWidth === lastW) return;
-      lastW = canvas.parentElement.clientWidth;
-      layout(); start(false);
+      if (cv.parentElement.clientWidth === lastW) return;
+      lastW = cv.parentElement.clientWidth;
+      layout(); seed(false); wake();
     }, 150);
   });
 
-  var fontReady = document.fonts && document.fonts.load
-    ? Promise.race([
-        Promise.all([document.fonts.load('800 100px Bricolage', 'Semih Geçim')]),
-        new Promise(function (ok) { setTimeout(ok, 1500); })
-      ])
-    : Promise.resolve();
-  fontReady.then(function () {
-    lastW = canvas.parentElement.clientWidth;
-    layout();
-    start(true);
+  Promise.race([
+    document.fonts ? document.fonts.load('800 100px Bricolage', 'Semih Geçim') : Promise.resolve(),
+    new Promise(function (ok) { setTimeout(ok, 1500); })
+  ]).then(function () {
+    lastW = cv.parentElement.clientWidth;
+    layout(); seed(true); wake();
+    if (!reduced) autoT = setTimeout(function () { if (!touched) { poke(W * .82, H * .45); touched = false; } }, 3200);
   });
 })();
 </script>
